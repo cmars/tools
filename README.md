@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/cmars/usso-login.svg?branch=master)](https://travis-ci.org/cmars/usso-login)
+
 # usso-login
 
 Authenticate to [Ubuntu SSO](https://login.ubuntu.com) from the command-line.
