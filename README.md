@@ -53,10 +53,13 @@ environment variables. This is useful when you don't have a terminal.
 
     $ export BROWSER=/path/to/usso-login
     $ charm publish /my/awesome/charm
+
 ...
+
     Email: azurediamond@hotmail.com
     Password: *******
     Two-Factor Auth: ******
+
 ...
 
 # Known Issues
