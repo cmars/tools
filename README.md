@@ -31,14 +31,14 @@ This might not work if any of the dependencies introduce breaking changes.
 
 ## Log in and store an Ubuntu SSO cookie
 
-    $ usso-login https://login.ubuntu.com
+    $ usso-login
     Email: azurediamond@hotmail.com
     Password: *******
     Two-Factor Auth: ******
     $ 
 
 You'll be prompted for email, password, and possibly two-factor auth if you
-have it set up. The cookie is stored in `$HOME/.usso-cookies`.
+have it set up. The cookie is then stored in `$HOME/.usso-cookies`.
 
 ## Non-interactive Use
 
