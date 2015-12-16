@@ -160,7 +160,10 @@ func (c *client) doLogin(urlStr string) (*http.Response, error) {
 		return nil, errgo.NoteMask(err, "failed to parse login page")
 	}
 
-	if doc.Find("#logout-link").Length() > 0 {
+	if doc.Find("#id_oath_token").Length() > 0 {
+		resp.Body = ioutil.NopCloser(bytes.NewBuffer(result))
+		return resp, nil
+	} else if doc.Find("#logout-link").Length() > 0 {
 		// If we can log out, we must be logged in!
 		return nil, ErrAlreadyLoggedIn
 	}
