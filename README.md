@@ -1,6 +1,6 @@
 # tools
 
-Miscellaneous tools developed in Go that I use.
+Miscellaneous tools that I use.
 
 # Prereqs
 
