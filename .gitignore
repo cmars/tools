@@ -3,3 +3,4 @@ pkg
 bin/godeps
 bin/http
 bin/represent
+bin/godef
