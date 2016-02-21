@@ -13,7 +13,7 @@ done
 gobrew versions | grep ${GOVERSION} || gobrew install ${GOVERSION}
 gobrew use ${GOVERSION}
 
-make all
+make -C ${HERE} all
 
 SHIBBOLETH=e0f9a3ae6cf2f6470bfc002c4d7b40cae0fae49cb2b267b1de03ac6d5f45be75
 
