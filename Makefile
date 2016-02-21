@@ -9,5 +9,10 @@ $(GB_BINS:%=bin/%): bin/gb
 bin/gb:
 	GOBIN=$(shell pwd)/bin go get github.com/constabulary/gb/cmd/gb
 
+sysdeps:
+	for step in sysdeps/*; do $$step; done
+
 clean:
 	$(RM) -f $(GB_BINS:%=bin/%) bin/gb
+
+.PHONY: all sysdeps clean
