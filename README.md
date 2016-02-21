@@ -9,7 +9,7 @@ Miscellaneous tools developed in Go that I use.
 
 # Building
 
-    $ gb build
+    $ make
 
 # Installation
 
