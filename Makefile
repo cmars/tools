@@ -1,5 +1,5 @@
 
-GB_BINS=gocov godef godeps http pt represent tmuxg
+GB_BINS=gocov godef godeps http pt represent tmuxg usso-login
 
 all: $(GB_BINS:%=bin/%)
 

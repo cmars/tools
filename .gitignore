@@ -8,3 +8,4 @@ bin/gb
 bin/gocov
 bin/pt
 bin/tmuxg
+bin/usso-login
