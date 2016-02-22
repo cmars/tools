@@ -1,2 +1,2 @@
 #!/bin/bash -ex
-sudo apt-get install -y git bzr mercurial jq
+sudo apt-get install -y --no-install-recommends git bzr mercurial jq
