@@ -1,6 +1,6 @@
 #!/bin/bash -xe
 
-HERE=PREFIX=$(cd $(dirname "$0"); pwd)
+HERE=$(cd $(dirname "$0"); pwd)
 
 ${HERE}/install.bash
 . ${HOME}/.bash_profile
