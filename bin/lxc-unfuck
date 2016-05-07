@@ -1,0 +1,8 @@
+#!/bin/bash -e
+
+# Run this script before demos and if things in LXD get stuck in general.
+# See https://pad.lv/1555760.
+
+sudo umount /proc/sys/fs/binfmt_misc && sudo mount -a || true
+for i in `lxc list --format json | jq -r '.[].name'`; do lxc exec $i reboot; done
+
