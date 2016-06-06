@@ -17,8 +17,13 @@ if [ -z "${charm_name}" ]; then
 fi
 
 lp_user=$(bzr lp-login)
+if [ -n "${PUSH_USER}" ]; then
+	push_user=${PUSH_USER}
+else
+	push_user=${lp_user}
+fi
 
-lp_repo=git+ssh://${lp_user}@git.launchpad.net/~${lp_user}/charms/+source/${charm_name}
+lp_repo=git+ssh://${lp_user}@git.launchpad.net/~${push_user}/charms/+source/${charm_name}
 
 tmp_repo=$(mktemp -d)
 trap "rm -rf ${tmp_repo}; rm -rf ${charm_path}/.git" EXIT
