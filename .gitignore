@@ -1,7 +1,7 @@
 pkg
 .*.swp
 bin/godeps
-bin/http
+bin/bhttp
 bin/represent
 bin/godef
 bin/gb
