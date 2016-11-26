@@ -1,6 +1,0 @@
-#!/bin/bash
-set -e
-PASSWORD=`juju ssh -m admin 0 "sudo grep oldpassword /var/lib/juju/agents/machine-*/agent.conf  | cut -d' ' -f2"`
-juju ssh -m admin 0 sudo apt-get install mongodb-clients
-PASSWORD=`echo ${PASSWORD} | perl -lpe 's/[^[:print:]]//g'`
-juju ssh -m admin 0 "mongo 127.0.0.1:37017/admin --ssl --username admin --password ${PASSWORD}"
